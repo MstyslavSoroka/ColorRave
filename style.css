@@ -55,3 +55,52 @@ ul {
   display: flex;
  }
  /* =================================================================================================================================================================== */
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 144px;
+  font-weight: 400;
+}
+.subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 72px;
+  font-weight: 400;
+}
+.description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.image_section {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+.reviews {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.section_title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+}
+.review {
+  font-size: 24px;
+}
+.date {
+  font-size: 14px;
+}
+.customer_name {
+  font-size: 14px;
+}
+.time_with_us {
+  font-size: 12px;
+}
+.footer_list {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+/* 
+font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif;
+font-family: 'Roboto', sans-serif; */
