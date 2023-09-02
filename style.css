@@ -95,6 +95,14 @@ ul {
 .time_with_us {
   font-size: 12px;
 }
+/* ============================================================================================================================ */
+footer {
+  background-color: #021635;
+  color: #fff;
+}
+.email {
+  color: #fff;
+}
 .footer_list {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
