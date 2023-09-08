@@ -1,60 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <title>ColoRawe</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <header>
-      <a href="#"><img src="img/nikelogo.png" alt="nikelogo" /></a>
-      <ul class="header_nav">
-        <li class="header_nav_item">
-          <a class="nav_link" href="#">Main page</a>
-        </li>
-        <li class="header_nav_item">
-          <a class="nav_link" href="#">Benefits</a>
-        </li>
-        <li class="header_nav_item">
-          <a class="nav_link" href="#">Advantages</a>
-        </li>
-        <li class="header_nav_item">
-          <a class="nav_link" href="#">Reviews</a>
-        </li>
-        <li class="header_nav_item">
-          <a class="nav_link" href="#">Contacts</a>
-        </li>
-        <li class="header_nav_item"><a class="nav_link" href="#">Order</a></li>
-      </ul>
-      <ul class="header_language">
-        <li class="header_language_item">
-          <a class="language_link" href="#">Ua</a>
-        </li>
-        <li class="header_language_item">
-          <a class="language_link" href="#">Eng</a>
-        </li>
-      </ul>
-    </header>
-    <main>
-      <section>
-        <a href="#">S&R</a>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>ColoRawe</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+    <a href="#"><img src="img/nikelogo.png" alt="nikelogo" /></a>
+    <ul class="header_nav">
+      <li class="header_nav_item">
+        <a class="nav_link" href="#">Main page</a>
+      </li>
+      <li class="header_nav_item">
+        <a class="nav_link" href="#">Benefits</a>
+      </li>
+      <li class="header_nav_item">
+        <a class="nav_link" href="#">Advantages</a>
+      </li>
+      <li class="header_nav_item">
+        <a class="nav_link" href="#">Reviews</a>
+      </li>
+      <li class="header_nav_item">
+        <a class="nav_link" href="#">Contacts</a>
+      </li>
+      <li class="header_nav_item"><a class="nav_link" href="#">Order</a></li>
+    </ul>
+    <a class="language_link" href="#">Ua</a>
+    <a class="language_link" href="#">Eng</a>
+  </ul>
+   </div>
+  </header>
+  <main>
+    <section class="mainbg">
+      <div class="container">
+        <a href="#"><img class="nikelogo" src="img/nikelogo.png" alt="nikelogo"></a>
+        <a class="logo" href="#">C&R</a>
         <h1 class="title">ColoRawe</h1>
         <h2 class="subtitle">Your dream Nike</h2>
         <p class="description">
@@ -63,27 +58,33 @@
           luck finding your way in the world of custom sneakers.
         </p>
         <button class="buy_button">Buy my Nike</button>
-      </section>
-      <section class="image_section">
-        <ul>
-          <li>
-            <img src="img/stars.png" alt="stars" />
+      </div>
+    </section>
+    <section class="image_section">
+      <div class="container"> 
+        <ul class="image_list">
+          <li class="image_list_item">
             <p class="image_description">Premium Quality</p>
+            <img src="img/stars.png" alt="stars" />
+
           </li>
           <li>
             <img src="img/paint.png" alt="paint" />
             <p class="image_description">Indelible paint</p>
           </li>
           <li>
-            <img src="img/truck.png" alt="truck" />
             <p class="image_description">Fast shipping</p>
+            <img src="img/truck.png" alt="truck" />
+
           </li>
         </ul>
-      </section>
-      <section class="Reviews">
+      </div>
+    </section>
+    <section class="Reviews_section">
+      <div class="container">
         <h3 class="section_title">Reviews</h3>
-        <ul>
-          <li>
+        <ul class="review_list">
+          <li class="review_list_item">
             <h4 class="review">
               Sneakers are very comfortable and well painted, nothing has worn
               off in a year.
@@ -92,7 +93,7 @@
             <h5 class="customer_name">John Teylor</h5>
             <p class="time_with_us">With us from 2018</p>
           </li>
-          <li>
+          <li class="review_list_item">
             <h4 class="review">
               I'm very happy with this color scheme. They match all my clothes.
             </h4>
@@ -100,7 +101,7 @@
             <h5 class="customer_name">Elizabeth Garsia</h5>
             <p class="time_with_us">With us from 2020</p>
           </li>
-          <li>
+          <li class="review_list_item">
             <h4 class="review">
               Just right if you need to go to a party. I use them actively, the
               paint is super.
@@ -110,8 +111,10 @@
             <p class="time_with_us">With us from 2019</p>
           </li>
         </ul>
-      </section>
-      <section class="order">
+      </div>
+    </section>
+    <section class="order">
+      <div class="container">
         <form>
           <label>
             <input type="email" name="email" placeholder="Write your email" />
@@ -379,33 +382,31 @@
           <input type="text" name="adress" placeholder="Your Adress" />
         </form>
         <button class="order_button">Order my Nike</button>
-      </section>
-    </main>
-    <footer>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
       <ul class="footer_list">
         <li class="footer_list_item">
           <p class="list_question">Have a question?</p>
-          <a class="email" href="mailto:ColoRawe_support@gmail.com"
-            >ColoRawe_support@gmail.com</a
-          >
+          <a class="email" href="mailto:ColoRawe_support@gmail.com">ColoRawe_support@gmail.com</a>
         </li>
         <li class="footer_list_item">
           <p class="list_question">Have a proposal for cooperation?</p>
-          <a class="email" href="mailto:ColoRawe_Cooperation@gmail.com"
-            >ColoRawe_Cooperation@gmail.com</a
-          >
+          <a class="email" href="mailto:ColoRawe_Cooperation@gmail.com">ColoRawe_Cooperation@gmail.com</a>
         </li>
         <li class="footer_list_item">
           <p class="list_question">Advertising questions?</p>
-          <a class="email" href="mailto:ColoRawe_Advertising@gmail.com"
-            >ColoRawe_Advertising@gmail.com</a
-          >
+          <a class="email" href="mailto:ColoRawe_Advertising@gmail.com">ColoRawe_Advertising@gmail.com</a>
         </li>
       </ul>
       <p>2022 ColoRawe @All rights reserved</p>
       <p>United States</p>
       <a href="#"><img src="img/nikelogo.png" alt="nikelogo"></a>
-      <a href="#">C&R</a>
-    </footer>
-  </body>
+      <a class="logo_footer" href="#">C&R</a>
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
 </html>

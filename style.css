@@ -26,16 +26,23 @@ ul {
   margin: 0;
   list-style: none;
 }
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+body {
+  color: #fff;
+}
 /* ======================================================================================================================================================================================================== */
- header {
+ .header {
     background-color: #012D63;
-    
-    
     font-size: 24px;
     display: flex;
  }
+
  .header_nav {
   display: flex;
+  flex-direction: row;
   
  }
  .nav_link, .language_link {
@@ -54,8 +61,27 @@ ul {
  .header_language {
   display: flex;
  }
+ .header_language_item {
+  /* display: flex; */
+ }
  /* =================================================================================================================================================================== */
-.title {
+.mainbg {
+   /* width: 1440px; */
+   height: 855px;
+   background-image: url(img/mainbg.jpg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+}
+.nikelogo {
+  margin-top: 91px;
+}
+ .logo {
+  font-family: 'PT Serif', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #fff;
+}
+ .title {
   font-family: 'Playfair Display', serif;
   font-size: 144px;
   font-weight: 400;
@@ -74,17 +100,37 @@ ul {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
   font-weight: 400;
+  background-image: url(img/imgsectionbg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 606px;
 }
-.reviews {
+.image_list {
+  display: flex;
+  justify-content: center;
+}
+.Reviews_section {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  height: 520px;
+  background-image: url(img/reviewsectionbg.jpg);
+  background-size: 100% 100%;
 }
 .section_title {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
+  text-align: center;
 }
 .review {
   font-size: 24px;
+  width: 228px;
+  height: 112px;
+}
+.review_list {
+  display: flex;
+}
+.review_list_item {
+  
 }
 .date {
   font-size: 14px;
@@ -95,6 +141,12 @@ ul {
 .time_with_us {
   font-size: 12px;
 }
+.order {
+  height: 509px;
+  background-image: url(img/ordersectionbg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 /* ============================================================================================================================ */
 footer {
   background-color: #021635;
@@ -102,11 +154,16 @@ footer {
 }
 .email {
   color: #fff;
+  text-decoration: underline;
 }
 .footer_list {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 24px;
+}
+.logo_footer {
+  font-size: 24px;
+  color: #fff;
 }
 /* 
 font-family: 'Playfair Display', serif;
