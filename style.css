@@ -26,78 +26,135 @@ ul {
   margin: 0;
   list-style: none;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 1110px;
   margin: 0 auto;
 }
+
 body {
   color: #fff;
 }
-/* ======================================================================================================================================================================================================== */
- .header {
-    background-color: #012D63;
-    font-size: 24px;
-    display: flex;
- }
 
- .header_nav {
-  display: flex;
-  flex-direction: row;
-  
- }
- .nav_link, .language_link {
-  font-family: 'Roboto';
-  font-weight: 300;
-   color: #C7C7C7;
- }
- .nav_link:hover {
-  color: #fff;
-  font-weight: 400;
- }
- .language_link:hover {
-  color: #fff;
-  font-weight: 400;
- }
- .header_language {
-  display: flex;
- }
- .header_language_item {
-  /* display: flex; */
- }
- /* =================================================================================================================================================================== */
-.mainbg {
-   /* width: 1440px; */
-   height: 855px;
-   background-image: url(img/mainbg.jpg);
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
+/* ======================================================================================================================================================================================================== */
+.header {
+  background-color: #012d63;
+  font-size: 24px;
 }
+
+.header_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header_nav {
+  display: flex;
+  margin-left: 152px;
+  gap: 29px;
+}
+
+.nav_link,
+.language_link {
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #c7c7c7;
+}
+
+.Ukrainian {
+  margin-left: 70px;
+}
+
+.English {
+  margin-left: 10px;
+}
+
+.nav_link:hover {
+  color: #fff;
+  font-weight: 400;
+}
+
+.language_link:hover {
+  color: #fff;
+  font-weight: 400;
+}
+
+.header_language {
+  display: flex;
+}
+
+.header_language_item {
+  /* display: flex; */
+}
+
+/* =================================================================================================================================================================== */
+.mainbg {
+  /* width: 1440px; */
+  height: 855px;
+  background-image: url(img/mainbg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 .nikelogo {
   margin-top: 91px;
+  margin-left: -10px;
 }
- .logo {
-  font-family: 'PT Serif', serif;
+
+.logo {
+  font-family: "PT Serif", serif;
   font-size: 48px;
   font-weight: 400;
   color: #fff;
 }
- .title {
-  font-family: 'Playfair Display', serif;
+
+.title {
+  font-family: "Playfair Display", serif;
   font-size: 144px;
   font-weight: 400;
 }
+
 .subtitle {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 72px;
   font-weight: 400;
 }
+
 .description {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  width: 508px;
+  margin-top: 20px;
 }
+
+.buy_button {
+  margin-top: 41px;
+  width: 254px;
+  height: 67px;
+  background-color: #8e32c6;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.image_list {
+  display: flex;
+  justify-content: center;
+  
+  /* margin-top: 105px; */
+  border: 5px solid #8E32C6;
+  /* margin-bottom: 105px; */
+}
+
+.image_list_item {
+
+}
+
 .image_section {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 36px;
   font-weight: 400;
   background-image: url(img/imgsectionbg.jpg);
@@ -105,66 +162,139 @@ body {
   background-size: 100% 100%;
   height: 606px;
 }
-.image_list {
-  display: flex;
-  justify-content: center;
-}
+
 .Reviews_section {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   height: 520px;
   background-image: url(img/reviewsectionbg.jpg);
   background-size: 100% 100%;
 }
+
 .section_title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 48px;
   text-align: center;
+  margin-bottom: 24px;
 }
+
 .review {
   font-size: 24px;
   width: 228px;
   height: 112px;
+  margin-top: 49px;
 }
+
 .review_list {
   display: flex;
+  justify-content: center;
+}
+
+.review_list_item:nth-child(1) {
+  background: linear-gradient(
+    137deg,
+    #00e5e6 7.29%,
+    #00a8f7 26.04%,
+    #9a76f9 62.5%,
+    #cc5ec2 100%
+  );
+  box-shadow: 0px 14px 0px -5px #7b54b2, 0px 30px 0px -13px #533978;
+}
+
+.review_list_item:nth-child(2) {
+  border-radius: 15px;
+  background: linear-gradient(
+    137deg,
+    #ff68b4 0%,
+    #ff45e1 26.04%,
+    #ce3aff 62.84%,
+    #8961ff 100%
+  );
+  box-shadow: 0px 14px 0px -5px #9159b1, 0px 30px 0px -13px #61337c;
+}
+.review_list_item:nth-child(3) {
+  border-radius: 15px;
+  background: linear-gradient(
+    143deg,
+    #ffe128 0%,
+    #ff9b5c 30.21%,
+    #ff8381 63.29%,
+    #ff5489 100%
+  );
+  box-shadow: 0px 14px 0px -5px #b95a4c, 0px 30px 0px -13px #732f26 ;
 }
 .review_list_item {
-  
+  border-radius: 15px;
+}
+
+.review_list_item:not(:nth-child(3)){
+  margin-right: 94px;
 }
 .date {
   font-size: 14px;
+  margin-bottom: 47px;
 }
+
 .customer_name {
   font-size: 14px;
+  margin-left: 54px;
+}
+
+.customer_photo {
+  
 }
 .time_with_us {
   font-size: 12px;
+  margin-left: 54px;
+  margin-bottom: 30px;
 }
+
 .order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 509px;
   background-image: url(img/ordersectionbg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px; /* Установите максимальную ширину формы по вашему усмотрению */
+  width: 100%;
+}
+
+.form label {
+  margin-bottom: 10px; /* Добавьте немного отступа между элементами формы */
 }
 /* ============================================================================================================================ */
 footer {
   background-color: #021635;
   color: #fff;
 }
+
 .email {
   color: #fff;
   text-decoration: underline;
 }
+
 .footer_list {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
+  /* display: flex; */
 }
+
+.footer_list_item {
+}
+
 .logo_footer {
   font-size: 24px;
   color: #fff;
 }
+
 /* 
 font-family: 'Playfair Display', serif;
 font-family: 'PT Serif', serif;
