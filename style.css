@@ -131,7 +131,7 @@ body {
   margin-top: 20px;
 }
 
-.buy_button {
+.button {
   margin-top: 41px;
   width: 254px;
   height: 67px;
@@ -139,18 +139,34 @@ body {
   color: #fff;
   border-radius: 10px;
 }
-
+.button:hover {
+  transform: scale(1.1);
+}
 .image_list {
   display: flex;
   justify-content: center;
-  
+  height: 396px;
   /* margin-top: 105px; */
   border: 5px solid #8E32C6;
   /* margin-bottom: 105px; */
 }
-
 .image_list_item {
+  height: 342px;
+  margin-top: 25px;
+}
+.image_list_item:nth-child(2) {
+  margin-left: 95px;
+  margin-right: 95px;
+}
 
+.image_list_item:nth-child(1) {
+  border-right: 2px solid #fff;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.image_list_item:nth-child(3) {
+  border-left: 2px solid #fff;
+  padding-left: 50px;
 }
 
 .image_section {
@@ -161,8 +177,14 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 606px;
+  padding-top: 105px;
 }
-
+.image_description {
+  margin-left: 50px;
+   width: 150px;
+   text-align: center;
+   
+}
 .Reviews_section {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -183,13 +205,17 @@ body {
   width: 228px;
   height: 112px;
   margin-top: 49px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .review_list {
   display: flex;
   justify-content: center;
 }
-
+.customer_info {
+  display: flex;
+}
 .review_list_item:nth-child(1) {
   background: linear-gradient(
     137deg,
@@ -226,26 +252,31 @@ body {
 .review_list_item {
   border-radius: 15px;
 }
-
+.review_list_item:hover {
+  transform: scale(1.1);
+}
 .review_list_item:not(:nth-child(3)){
   margin-right: 94px;
 }
 .date {
   font-size: 14px;
   margin-bottom: 47px;
+  margin-left: 15px;
 }
 
 .customer_name {
   font-size: 14px;
-  margin-left: 54px;
+  margin-left: 5px;
 }
 
 .customer_photo {
-  
+  margin-left: 15px;
+  width: 31px;
+  height: 31px;
 }
 .time_with_us {
   font-size: 12px;
-  margin-left: 54px;
+  margin-left: 5px;
   margin-bottom: 30px;
 }
 
@@ -257,17 +288,36 @@ body {
   background-image: url(img/ordersectionbg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  font-weight: 400px;
+  font-family: Roboto;
 }
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 300px; /* Установите максимальную ширину формы по вашему усмотрению */
-  width: 100%;
 }
 
 .form label {
-  margin-bottom: 10px; /* Добавьте немного отступа между элементами формы */
+  margin-bottom: 10px; 
+}
+.email_form {
+  width: 690px;
+  height: 60px;
+  color: #959595;
+  font-size: 28px;
+
+
+
+}
+.country_form, .city_form, .address_form{
+  width: 580px;
+  height: 50px;
+  color: #959595;
+  font-size: 24px;
+
+}
+input {
+  border-radius: 50px;
 }
 /* ============================================================================================================================ */
 footer {
@@ -278,16 +328,20 @@ footer {
 .email {
   color: #fff;
   text-decoration: underline;
+  
 }
 
 .footer_list {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  /* display: flex; */
+  display: flex;
+  justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer_list_item {
+  display: flex;
 }
 
 .logo_footer {
