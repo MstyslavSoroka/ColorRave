@@ -335,20 +335,36 @@ footer {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  display: flex;
+  padding-top: 45px;
+  border-bottom: 1px solid #9B9B9B;
+  /* display: flex;
   justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .footer_list_item {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.footer_list_item:last-child {
+  margin-bottom: 20px;
 }
 
 .logo_footer {
   font-size: 24px;
   color: #fff;
 }
-
+.rights {
+  margin-top: 24px;
+}
+.footer_div {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_nike_logo {
+}
 /* 
 font-family: 'Playfair Display', serif;
 font-family: 'PT Serif', serif;
