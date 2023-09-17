@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <title>ColoRawe</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header_wrap">
+    <a href="#"><img src="img/nikelogo.png" alt="nikelogo" /></a>
+    <nav>
+    <ul class="header_nav">
+      <li class="header_nav_item">
+        <a class="nav_link" href="#">Головна</a>
+      </li>
+      <li class="header_nav_item">
+        <a class="nav_link" href="#">Переваги</a>
+      </li>
+      <!-- <li class="header_nav_item">
+        <a class="nav_link" href="#">Переваги</a>
+      </li> -->
+      <li class="header_nav_item">
+        <a class="nav_link" href="#Reviews">Відгуки</a>
+      </li>
+      <li class="header_nav_item">
+        <a class="nav_link" href="#">Контакти</a>
+      </li>
+      <li class="header_nav_item">
+        <a class="nav_link" href="#Order">Замовити</a></li>
+    </ul>
+  </nav>
+    <a class="language_link Ukrainian" href="#">Укр</a>
+    <a class="language_link English" href="index.html">Англ</a>
+   </div>
+  </header>
+  <main>
+    <section class="mainbg">
+      <div class="container">
+        <img class="nikelogo" src="img/nikelogo.png" alt="nikelogo" width="140">
+        <p class="logo" href="#">C&R</p>
+        <h1 class="title">ColoRawe</h1>
+        <h2 class="subtitle">Ваші мрії від Nike</h2>
+        <p class="description">
+          На цьому сайті ви знайдете індивідуальні кросівки Nike своєї мрії. Оригінальна компанія не може створити такі чудові кросівки, як ми. Удачі вам у світі індивідуальних кросівок.
+        </p>
+        <button class="button">Купити мої Nike</button>
+      </div>
+    </section>
+    <section class="image_section">
+      <div class="container"> 
+        <ul class="image_list">
+          <li class="image_list_item">
+            <p class="image_description">Преміум якість</p>
+            <img src="img/stars.png" alt="stars" />
+
+          </li>
+          <li class="image_list_item" >
+            <img src="img/paint.png" alt="paint" />
+            <p class="image_description">Незмивна фарба</p>
+          </li>
+          <li class="image_list_item">
+            <p class="image_description">Швидка доставка</p>
+            <img src="img/truck.png" alt="truck" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="Reviews_section" id="Reviews">
+      <div class="container">
+        <h3 class="section_title">Відгуки</h3>
+        <ul class="review_list">
+          <li class="review_list_item">
+            <h4 class="review">
+              Кросівки дуже зручні і гарно розмальовані, нічого не стерлося за рік.
+            </h4>
+            <p class="date">25.11</p>
+            <div class="customer_info">
+            <img class="customer_photo" src="img/JohnTeylor.png" alt="JohnTeylor">
+            <div class="customer_details">
+            <h5 class="customer_name">Джон Тейлор</h5>
+            <p class="time_with_us">У нас з 2018 року</p>
+          </div>
+          </div>
+          </li>
+          <li class="review_list_item">
+            <h4 class="review">
+              Я дуже задоволений цією кольоровою гамою. Вони підходять до всіх моїх речей.
+            </h4>
+            <p class="date">05.01</p>
+            <div class="customer_info">
+            <img class="customer_photo" src="img/ElizabethGarsia.png" alt="ElizabethGarsia">
+            <div class="customer_details">
+            <h5 class="customer_name">Елізабет Гарсія</h5>
+            <p class="time_with_us">У нас з 2020 року</p>
+          </div>
+          </div>
+          </li>
+          <li class="review_list_item">
+            <h4 class="review">
+              Просто правильно, якщо вам потрібно піти на вечірку. Я активно носю їх, фарба супер.
+            </h4>
+            <p class="date">18.06</p>
+            <div class="customer_info">
+            <img class="customer_photo" src="img/TomMaquare.png" alt="TomMaquare">
+            <div class="customer_details">
+            <h5 class="customer_name">Том Макуар</h5>
+            <p class="time_with_us">У нас з 2019 року</p>
+          </div>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="order" id="Order">
+      <div class="container">
+        <h3 class="section_title">Замовлення</h3>
+        <form class="form">
+          <label>
+            <input class="email_form" type="email" name="email" placeholder="  Введіть свою електронну пошту" />
+          </label>
+          <label>
+            <input class="country_form" type="text" name="country" placeholder="  Ваша країна" />
+          </label>
+          <label>
+            <input class="city_form" type="text" name="city" placeholder="  Ваше місто" />
+          </label>
+          <label>
+            <input class="address_form" type="text" name="address" placeholder="  Ваша адреса" />
+          </label>
+          <button type="submit" class="button">Замовити мої Nike</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <ul class="footer_list">
+        <li class="footer_list_item">
+          <p class="list_question">Є питання?</p>
+          <a class="email" href="mailto:ColoRawe_support@gmail.com">ColoRawe_support@gmail.com</a>
+        </li>
+        <li class="footer_list_item">
+          <p class="list_question">Маєте пропозицію щодо співпраці?</p>
+          <a class="email" href="mailto:ColoRawe_Cooperation@gmail.com">ColoRawe_Cooperation@gmail.com</a>
+        </li>
+        <li class="footer_list_item">
+          <p class="list_question">Питання щодо реклами?</p>
+          <a class="email" href="mailto:ColoRawe_Advertising@gmail.com">ColoRawe_Advertising@gmail.com</a>
+        </li>
+      </ul>
+      <div class="footer_div">
+      <p class="rights" >2022 ColoRawe @Всі права захищені <br>Сполучені Штати</p>
+      <div class="footer_logo_div">
+      <a href="#"><img class="footer_nike_logo" src="img/nikelogo.png" alt="nikelogo"></a>
+      <a href="#" class="logo_footer">C&R</a>
+    </div>
+    </div>
+    </div>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -167,6 +167,7 @@ body {
 .image_list_item:nth-child(3) {
   border-left: 2px solid #fff;
   padding-left: 50px;
+  padding-right: 50px;
 }
 
 .image_section {
