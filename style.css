@@ -355,6 +355,7 @@ footer {
 .logo_footer {
   font-size: 24px;
   color: #fff;
+  margin-left: 20px;
 }
 .rights {
   margin-top: 24px;
@@ -363,7 +364,9 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.footer_nike_logo {
+.footer_logo_div {
+   display: flex;
+   flex-direction: column;
 }
 /* 
 font-family: 'Playfair Display', serif;
