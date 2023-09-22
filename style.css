@@ -86,9 +86,9 @@ body {
   display: flex;
 }
 
-.header_language_item {
-  /* display: flex; */
-}
+/* .header_language_item {
+  display: flex;
+} */
 
 /* =================================================================================================================================================================== */
 .mainbg {
@@ -138,6 +138,7 @@ body {
   background-color: #8e32c6;
   color: #fff;
   border-radius: 10px;
+  cursor: pointer;
 }
 .button:hover {
   transform: scale(1.1);
@@ -147,7 +148,7 @@ body {
   justify-content: center;
   height: 396px;
   /* margin-top: 105px; */
-  border: 5px solid #8E32C6;
+  border: 5px solid #8e32c6;
   /* margin-bottom: 105px; */
 }
 .image_list_item {
@@ -182,16 +183,17 @@ body {
 }
 .image_description {
   margin-left: 50px;
-   width: 150px;
-   text-align: center;
-   
+  width: 150px;
+  text-align: center;
 }
 .Reviews_section {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   height: 520px;
-  background-image: url(img/reviewsectionbg.jpg);
-  background-size: 100% 100%;
+  background-image: url(img/flowers.png), url(img/reviewsectionbg.jpg) ;
+  background-size: 340px 380px,100% 100%;
+  background-repeat: no-repeat;
+  background-position: left bottom, center;
 }
 
 .section_title {
@@ -205,11 +207,14 @@ body {
   font-size: 24px;
   width: 228px;
   height: 112px;
-  margin-top: 49px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 49px 15px 0 15px;
 }
-
+.review_uk {
+  font-size: 24px;
+  height: 112px;
+  width: 310px;
+  margin: 49px 15px 0 15px;
+}
 .review_list {
   display: flex;
   justify-content: center;
@@ -217,7 +222,49 @@ body {
 .customer_info {
   display: flex;
 }
-.review_list_item:nth-child(1) {
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  padding: 20px;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.prev-slide,
+.next-slide {
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 5px 10px;
+  background-color: #8e32c6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Скрытие скроллбара для слайдера */
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
+.slide {
+  border-radius: 15px;
+}
+.slide:nth-child(1) {
   background: linear-gradient(
     137deg,
     #00e5e6 7.29%,
@@ -225,11 +272,10 @@ body {
     #9a76f9 62.5%,
     #cc5ec2 100%
   );
-  box-shadow: 0px 14px 0px -5px #7b54b2, 0px 30px 0px -13px #533978;
+  /* box-shadow: 0px 14px 0px -5px #7b54b2, 0px 30px 0px -13px #533978; */
 }
 
-.review_list_item:nth-child(2) {
-  border-radius: 15px;
+.slide:nth-child(2) {
   background: linear-gradient(
     137deg,
     #ff68b4 0%,
@@ -237,10 +283,9 @@ body {
     #ce3aff 62.84%,
     #8961ff 100%
   );
-  box-shadow: 0px 14px 0px -5px #9159b1, 0px 30px 0px -13px #61337c;
+  /* box-shadow: 0px 14px 0px -5px #9159b1, 0px 30px 0px -13px #61337c; */
 }
-.review_list_item:nth-child(3) {
-  border-radius: 15px;
+.slide:nth-child(3) {
   background: linear-gradient(
     143deg,
     #ffe128 0%,
@@ -248,16 +293,7 @@ body {
     #ff8381 63.29%,
     #ff5489 100%
   );
-  box-shadow: 0px 14px 0px -5px #b95a4c, 0px 30px 0px -13px #732f26 ;
-}
-.review_list_item {
-  border-radius: 15px;
-}
-.review_list_item:hover {
-  transform: scale(1.1);
-}
-.review_list_item:not(:nth-child(3)){
-  margin-right: 94px;
+  /* box-shadow: 0px 14px 0px -5px #b95a4c, 0px 30px 0px -13px #732f26 ; */
 }
 .date {
   font-size: 14px;
@@ -299,23 +335,21 @@ body {
 }
 
 .form label {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 .email_form {
   width: 690px;
   height: 60px;
   color: #959595;
   font-size: 28px;
-
-
-
 }
-.country_form, .city_form, .address_form{
+.country_form,
+.city_form,
+.address_form {
   width: 580px;
   height: 50px;
   color: #959595;
   font-size: 24px;
-
 }
 input {
   border-radius: 50px;
@@ -329,7 +363,6 @@ footer {
 .email {
   color: #fff;
   text-decoration: underline;
-  
 }
 
 .footer_list {
@@ -337,7 +370,7 @@ footer {
   font-weight: 400;
   font-size: 24px;
   padding-top: 45px;
-  border-bottom: 1px solid #9B9B9B;
+  border-bottom: 1px solid #9b9b9b;
   /* display: flex;
   justify-content: space-between;
     flex-wrap: wrap; */
@@ -366,8 +399,8 @@ footer {
   justify-content: space-between;
 }
 .footer_logo_div {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 /* 
 font-family: 'Playfair Display', serif;
