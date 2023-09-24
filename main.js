@@ -30,21 +30,4 @@ nextBtn.addEventListener('click', () => {
   goToSlide(currentSlide);
 });
 
-// Автоматическое переключение слайдов (можете настроить по своему усмотрению)
-// function autoSlide() {
-//   currentSlide++;
-//   goToSlide(currentSlide);
-// }
-
-// // Запуск автоматической прокрутки
-// const autoSlideInterval = setInterval(autoSlide, 1000);
-
-// // Остановка автоматической прокрутки при наведении курсора на слайдер
-// sliderContainer.addEventListener('mouseenter', () => {
-//   clearInterval(autoSlideInterval);
-// });
-
-// // Возобновление автоматической прокрутки при уходе курсора с слайдера
-// sliderContainer.addEventListener('mouseleave', () => {
-//   autoSlideInterval = setInterval(autoSlide, 1000);
-// });
+// =====================================================
